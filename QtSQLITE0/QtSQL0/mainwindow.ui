@@ -1,0 +1,929 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>761</width>
+    <height>566</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>751</width>
+      <height>511</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tabData">
+     <attribute name="title">
+      <string>Исходные данные</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBoxRecord">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>10</y>
+        <width>341</width>
+        <height>231</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string> Запись</string>
+      </property>
+      <widget class="QPushButton" name="pushButtonInsert">
+       <property name="geometry">
+        <rect>
+         <x>150</x>
+         <y>200</y>
+         <width>61</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Добавить</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButtonUpdate">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>200</y>
+         <width>61</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Обновить</string>
+       </property>
+      </widget>
+      <widget class="QTableWidget" name="tableWidgetForm">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>201</width>
+         <height>171</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButtonView">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>200</y>
+         <width>61</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Смотреть</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox1">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>60</y>
+         <width>111</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox2">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>90</y>
+         <width>111</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox3">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>120</y>
+         <width>111</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox4">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>150</y>
+         <width>111</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBoxTables">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>370</y>
+        <width>211</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Таблицы</string>
+      </property>
+      <widget class="QComboBox" name="comboBoxTables">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>121</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButtonGrabTable">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>20</y>
+         <width>61</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>В строку</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBoxStatus">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>370</y>
+        <width>451</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Статус</string>
+      </property>
+      <widget class="QListWidget" name="listWidgetStatus">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>431</width>
+         <height>81</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBoxData_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>381</width>
+        <height>231</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Данные</string>
+      </property>
+      <widget class="QListWidget" name="listWidgetData">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>361</width>
+         <height>201</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBoxRequest">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>250</y>
+        <width>671</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Запрос</string>
+      </property>
+      <widget class="QLineEdit" name="lineEditRequest">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>571</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButtonRequestExec">
+       <property name="geometry">
+        <rect>
+         <x>590</x>
+         <y>20</y>
+         <width>71</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Выполнить</string>
+       </property>
+      </widget>
+      <widget class="QListWidget" name="listWidgetRequest">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>50</y>
+         <width>571</width>
+         <height>61</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButtonDeleteRequest">
+       <property name="geometry">
+        <rect>
+         <x>590</x>
+         <y>50</y>
+         <width>71</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Удалить</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBoxFields">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>430</y>
+        <width>211</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Поля</string>
+      </property>
+      <widget class="QPushButton" name="pushButtonGrabField">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>20</y>
+         <width>61</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>В строку</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBoxFields">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>121</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tabRelationships">
+     <attribute name="title">
+      <string>Отношения</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBoxObject">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>191</width>
+        <height>241</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Объект</string>
+      </property>
+      <widget class="QTableWidget" name="tableWidgetObject">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>171</width>
+         <height>171</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="spinBoxObject">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>200</y>
+         <width>71</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBoxRelation">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>10</y>
+        <width>191</width>
+        <height>241</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Отношение</string>
+      </property>
+      <widget class="QTableWidget" name="tableWidgetObjectRelation">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>171</width>
+         <height>171</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="spinBoxRelation">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>200</y>
+         <width>71</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBoxSubject">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>10</y>
+        <width>191</width>
+        <height>241</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Субъект</string>
+      </property>
+      <widget class="QTableWidget" name="tableWidgetSubject">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>171</width>
+         <height>171</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="spinBoxSubject">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>200</y>
+         <width>71</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QSpinBox" name="spinBoxRelationship">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>280</y>
+        <width>71</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonInsertRelationship">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>310</y>
+        <width>61</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Добавить</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonUpdateRelationship">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>340</y>
+        <width>61</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Обновить</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelRecordRelationship">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>260</y>
+        <width>671</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Panel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>&lt;Объект&gt; for &lt;субъекта&gt; as &lt;отношение&gt;</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBoxMemo">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>280</y>
+        <width>391</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Примечание</string>
+      </property>
+      <widget class="QLineEdit" name="lineEditMemo">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>371</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>memo</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tabEvents">
+     <attribute name="title">
+      <string>События</string>
+     </attribute>
+     <widget class="QPushButton" name="pushButtonUpdateEvent">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>380</y>
+        <width>61</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Обновить</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBoxEventType">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>10</y>
+        <width>271</width>
+        <height>241</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Тип события</string>
+      </property>
+      <widget class="QTableWidget" name="tableWidgetObjectEventType">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>251</width>
+         <height>171</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="spinBoxEventType">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>200</y>
+         <width>71</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="labelRecordEvent">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>360</y>
+        <width>671</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::Panel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="text">
+       <string>&lt;Объект&gt; in &lt;событие&gt; at &lt;дата&gt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButtonInsertEvent">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>380</y>
+        <width>61</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Добавить</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBoxMemo_2">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>300</y>
+        <width>291</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Примечание</string>
+      </property>
+      <widget class="QLineEdit" name="lineEditMemoEvents">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>271</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>memo</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBoxObjectEvent">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>191</width>
+        <height>241</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Объект</string>
+      </property>
+      <widget class="QTableWidget" name="tableWidgetObjectEvent">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>171</width>
+         <height>171</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="spinBoxObjectEvent">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>200</y>
+         <width>71</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QSpinBox" name="spinBoxEvent">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>380</y>
+        <width>71</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBoxData">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>250</y>
+        <width>191</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Дата</string>
+      </property>
+      <widget class="QLineEdit" name="lineEditDate">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>113</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="pushButtonViewtEvent">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>380</y>
+        <width>61</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Смотреть</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBoxSubjectEvent">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>10</y>
+        <width>191</width>
+        <height>241</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Субъект</string>
+      </property>
+      <widget class="QTableWidget" name="tableWidgetSubjectEvent">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>171</width>
+         <height>171</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QSpinBox" name="spinBoxSubjectEvent">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>200</y>
+         <width>71</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Иерархия</string>
+     </attribute>
+     <widget class="QTreeWidget" name="treeWidgetFathers">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>351</width>
+        <height>431</height>
+       </rect>
+      </property>
+      <property name="allColumnsShowFocus">
+       <bool>false</bool>
+      </property>
+      <property name="headerHidden">
+       <bool>true</bool>
+      </property>
+      <column>
+       <property name="text">
+        <string notr="true">1</string>
+       </property>
+      </column>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>761</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuDatabase">
+    <property name="title">
+     <string>Database</string>
+    </property>
+    <addaction name="actionView_data"/>
+    <addaction name="actionInsert_data"/>
+    <addaction name="actionInsert_field"/>
+    <addaction name="actionUpdate_data"/>
+    <addaction name="actionView_table_list"/>
+    <addaction name="actionView_fields_list"/>
+    <addaction name="actionInsertRelationship"/>
+    <addaction name="actionUpdateRelationship"/>
+    <addaction name="actionViewRelationship"/>
+    <addaction name="actionViewRelationshipRecords"/>
+    <addaction name="actionViewPersonRecords"/>
+    <addaction name="actionViewRelationRecords"/>
+    <addaction name="actionInsertEvent"/>
+    <addaction name="actionUpdateEvent"/>
+    <addaction name="actionViewEvent"/>
+    <addaction name="actionViewEventRecords"/>
+    <addaction name="actionViewEventTypeRecords"/>
+    <addaction name="actionExecuteRequest"/>
+    <addaction name="actionDeleteRequest"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuDatabase"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionView_data">
+   <property name="text">
+    <string>View data</string>
+   </property>
+  </action>
+  <action name="actionInsert_data">
+   <property name="text">
+    <string>Insert data</string>
+   </property>
+  </action>
+  <action name="actionInsert_table">
+   <property name="text">
+    <string>Insert table</string>
+   </property>
+  </action>
+  <action name="actionInsert_field">
+   <property name="text">
+    <string>Insert field</string>
+   </property>
+  </action>
+  <action name="actionSelect_row">
+   <property name="text">
+    <string>Select row</string>
+   </property>
+  </action>
+  <action name="actionUpdate_data">
+   <property name="text">
+    <string>Update data</string>
+   </property>
+  </action>
+  <action name="actionView_table_list">
+   <property name="text">
+    <string>View table list</string>
+   </property>
+  </action>
+  <action name="actionView_fields_list">
+   <property name="text">
+    <string>View fields list</string>
+   </property>
+  </action>
+  <action name="actionInsertRelationship">
+   <property name="text">
+    <string>InsertRelationship</string>
+   </property>
+  </action>
+  <action name="actionUpdateRelationship">
+   <property name="text">
+    <string>UpdateRelationship</string>
+   </property>
+  </action>
+  <action name="actionViewRelationship">
+   <property name="text">
+    <string>ViewRelationship</string>
+   </property>
+  </action>
+  <action name="actionViewRelationshipRecords">
+   <property name="text">
+    <string>ViewRelationshipRecords</string>
+   </property>
+  </action>
+  <action name="actionViewPersonRecords">
+   <property name="text">
+    <string>ViewPersonRecords</string>
+   </property>
+  </action>
+  <action name="actionViewRelationRecords">
+   <property name="text">
+    <string>ViewRelationRecords</string>
+   </property>
+  </action>
+  <action name="actionInsertEvent">
+   <property name="text">
+    <string>InsertEvent</string>
+   </property>
+  </action>
+  <action name="actionUpdateEvent">
+   <property name="text">
+    <string>UpdateEvent</string>
+   </property>
+  </action>
+  <action name="actionViewEvent">
+   <property name="text">
+    <string>ViewEvent</string>
+   </property>
+  </action>
+  <action name="actionViewEventRecords">
+   <property name="text">
+    <string>ViewEventRecords</string>
+   </property>
+  </action>
+  <action name="actionViewEventTypeRecords">
+   <property name="text">
+    <string>ViewEventTypeRecords</string>
+   </property>
+  </action>
+  <action name="actionExecuteRequest">
+   <property name="text">
+    <string>ExecuteRequest</string>
+   </property>
+  </action>
+  <action name="actionDeleteRequest">
+   <property name="text">
+    <string>DeleteRequest</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionExit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>199</x>
+     <y>149</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
